@@ -1,0 +1,24 @@
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de entorno (nunca subas claves o configuraciones sensibles)
+.env
+.env.local
+
+# Archivos de sistema (específicos de macOS y Windows)
+.DS_Store
+Thumbs.db
+
+# Archivos de logs y temporales
+*.log
+*.tmp
+*.temp
+
+# Archivos de compilación o build (si usas herramientas como Webpack, Vite, etc.)
+dist/
+build/
+out/
+
+# Archivos de IDE (si usas Visual Studio Code, IntelliJ, etc.)
+.vscode/
+.idea/

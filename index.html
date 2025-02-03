@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Juegos Lógicos</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Plataforma de Juegos Lógicos</h1>
+  </header>
+
+  <main>
+    <section id="juegos">
+      <h2>Elige un Juego</h2>
+      <button onclick="cargarAdivinaElNumero()">Adivina el Número</button>
+      <button onclick="cargarTresEnRaya()">Tres en Raya</button>
+    </section>
+
+    <section id="contenedor-juego">
+      <!-- Aquí se carga el juego seleccionado -->
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/adivinaElNumero.js"></script>
+  <script src="js/tresEnRaya.js"></script>
 </body>
 </html>
