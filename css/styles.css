@@ -1,48 +1,85 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-  }
-  
-  button {
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  #contenedor-juego {
-    margin-top: 2rem;
-  }
-  
-  /* Estilos para el Tres en Raya */
-  .tablero {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
-    margin: 0 auto;
-  }
-  
-  .celda {
-    width: 100px;
-    height: 100px;
-    display: flex;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+#juegos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.juego-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.juego-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.juego-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.juego-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.juego-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  #juegos {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    background-color: #ddd;
-    cursor: pointer;
   }
-  
-  .celda:hover {
-    background-color: #ccc;
+
+  .juego-card {
+    width: 100%;
   }
+}

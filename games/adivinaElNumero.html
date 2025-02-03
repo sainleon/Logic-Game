@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el Número</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    #juego {
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #mensaje {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+    button {
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Adivina el Número</h1>
+    <a href="../index.html" class="btn">Volver al Inicio</a>
+  </header>
+
+  <main>
+    <div id="juego">
+      <p>Adivina un número entre 1 y 100:</p>
+      <input type="number" id="inputNumero" min="1" max="100">
+      <button onclick="adivinar()">Adivinar</button>
+      <p id="mensaje"></p>
+      <button onclick="reiniciar()">Reiniciar</button>
+    </div>
+  </main>
+
+  <script src="../js/adivinaElNumero.js"></script>
+</body>
+</html>

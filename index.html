@@ -9,22 +9,28 @@
 <body>
   <header>
     <h1>Plataforma de Juegos Lógicos</h1>
+    <p>¡Elige un juego y diviértete!</p>
   </header>
 
   <main>
     <section id="juegos">
-      <h2>Elige un Juego</h2>
-      <button onclick="cargarAdivinaElNumero()">Adivina el Número</button>
-      <button onclick="cargarTresEnRaya()">Tres en Raya</button>
-    </section>
-
-    <section id="contenedor-juego">
-      <!-- Aquí se carga el juego seleccionado -->
+      <a href="games/adivinaElNumero.html" class="juego-link">
+        <div class="juego-card">
+          <h2>Adivina el Número</h2>
+          <p>Intenta adivinar el número secreto entre 1 y 100.</p>
+        </div>
+      </a>
+      <a href="games/tresEnRaya.html" class="juego-link">
+        <div class="juego-card">
+          <h2>Tres en Raya</h2>
+          <p>Juega al clásico Tres en Raya contra un amigo.</p>
+        </div>
+      </a>
     </section>
   </main>
 
-  <script src="js/main.js"></script>
-  <script src="js/adivinaElNumero.js"></script>
-  <script src="js/tresEnRaya.js"></script>
+  <footer>
+    <p>&copy; 2023 Plataforma de Juegos Lógicos</p>
+  </footer>
 </body>
 </html>
